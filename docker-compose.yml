@@ -4,6 +4,7 @@ services:
         build: ./services
         volumes:
             - ./services:/usr/src/app/
+            - ~/.gitconfig:/root/.gitconfig:ro
         ports:
             - 8000:8000
         env_file:
